@@ -9,4 +9,5 @@
 Запуск сервера
 
 `pipenv shell`
+&nbsp;
 `python manage.py runserver`
