@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="{% static 'detector/css/style.css' %}">
+    <style>
+        .average_color {
+            background-color: RGB({{ color1 }}, {{ color2 }}, {{ color3 }});
+        }
+    </style>
+</head>
+<body>
+    <div class="images">
+        <img src="/media/detector/input.jpg">
+        <img src="/media/detector/new_input.jpg">
+    </div>
+
+    <div>
+        <p><b>Найдено монет:</b> {{ count_coins }}</p>
+        <p><b>Сумма монет:</b> {{ total_value }}</p>
+        <p><b>Размер изображения:</b> {{ size }}</p>
+        <p><b>Средний цвет:</b> RGB({{ color1 }}, {{ color2 }}, {{ color3 }})<div class="average_color"></div></p>
+    </div>
+
+</body>
+</html>
