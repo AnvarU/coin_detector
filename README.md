@@ -9,5 +9,5 @@
 Запуск сервера
 
 `pipenv shell`
-&nbsp;
+&ensp;
 `python manage.py runserver`
